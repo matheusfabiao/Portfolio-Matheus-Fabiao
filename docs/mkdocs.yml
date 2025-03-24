@@ -1,6 +1,7 @@
 site_name: Portfolio Matheus Fabião
 site_description: Documentação do meu portfólio pessoal desenvolvido com Django
 site_author: Matheus Fabião
+repo_url: https://github.com/matheusfabiao/Portfolio-Matheus-Fabiao
 
 theme:
   name: material
