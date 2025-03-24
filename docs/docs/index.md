@@ -20,7 +20,7 @@ Este portfólio foi construído seguindo princípios de Clean Architecture e boa
 - **Nginx** - Servidor web e proxy reverso
 
 ### Frontend
-- **Bootstrap 5.3** - Framework CSS moderno e responsivo
+- **Tailwind v4.0** - Framework CSS moderno e responsivo
 - **CSS** - Estilização personalizada e responsiva
 - **HTMX** - Interatividade dinâmica e moderna, sem recarregamento da página
 
@@ -35,13 +35,30 @@ Este portfólio foi construído seguindo princípios de Clean Architecture e boa
 ```
 portfolio-matheusfabiao/
 │-- src/              # Código-fonte principal
-│   │-- core/         # Configurações e URLs base
-│   │-- static/       # Assets estáticos
+│   │-- core/         # Configurações e URLs base do Django
+│   │-- portfolio/    # Aplicação principal do portfólio
+│   │   │-- migrations/  # Migrações do banco de dados
+│   │   │-- admin.py    # Configuração do admin
+│   │   │-- apps.py     # Configuração da aplicação
+│   │   │-- models.py   # Modelos de dados
+│   │   │-- tests.py    # Testes da aplicação
+│   │   │-- urls.py     # URLs da aplicação
+│   │   │-- views.py    # Views da aplicação
+│   │-- static/       # Arquivos estáticos
+│   │   │-- fa/      # Fonte de ícones
+│   │   │-- fonts/   # Fontes personalizadas
+│   │   │-- img/     # Imagens do site
 │   │-- templates/    # Templates HTML
+│   │   │-- base.html   # Template base
+│   │   │-- portfolio/  # Templates do portfólio
 │   │-- manage.py     # CLI do Django
-│-- env_files/        # Configurações de ambiente
-│-- pyproject.toml    # Dependências e tasks
-│-- .venv/           # Ambiente virtual
+│-- docs/             # Documentação MkDocs
+│   │-- docs/         # Arquivos markdown
+│   │-- mkdocs.yml    # Configuração do MkDocs
+│-- env_files/        # Arquivos de ambiente
+│   │-- .env.example  # Exemplo de configuração
+│-- pyproject.toml    # Configuração e dependências
+│-- .venv/           # Ambiente virtual (não versionado)
 ```
 
 ## 🛠️ Ambiente de Desenvolvimento
