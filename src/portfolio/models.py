@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Nome')
-    slug = models.SlugField(verbose_name='Slug')
+    slug = models.SlugField(verbose_name='Slug', unique=True)
     description = models.TextField(blank=True, verbose_name='Descrição')
 
     class Meta:
