@@ -4,9 +4,9 @@
 {% block title %}John Doe - Freelance Developer{% endblock %}
 
 {% block css %}
+    <link rel="stylesheet" href="{% static 'css/libs/aos/aos.css' %}">
+    <script src="{% static 'js/libs/aos/aos.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'fa-icons/css/all.min.css' %}">
 {% endblock %}
 
@@ -124,10 +124,11 @@
 {% endblock %}
 
 {% block javascript %}
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
+    <script src="{% static 'js/libs/aos/aos.js' %}"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 {% endblock %}
